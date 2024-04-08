@@ -1,0 +1,23 @@
+두 개의 정수를 입력해서 두 숫자 중 큰숫자를 출력하는 프로그램
+
+
+
+#include <stdio.h>
+
+int main() {
+     int num1, num2;
+     // 사용자로부터 두 개의 정수 입력 받기
+     printf("두 개의 정수를 입력하세요: ");
+     scanf("%d %d", &num1, &num2);
+     
+     // 두 숫자 중 큰 숫자를 출력
+     if(num1 > num2) {
+        printf("큰 숫자는 %d입니다.\n", num1);
+     } else if (num2 > num1) {
+        printf("큰 숫자는 %d입니다.\n", num2);
+     }  else {
+         printf("두 숫자는 같습니다.\n");
+     }
+
+     return 0;
+}
